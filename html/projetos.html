@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Conheça os projetos sociais desenvolvidos pela ONG Conexão Solidária."
+    >
+
+    <title>Conexão Solidária | Projetos</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Acessibilidade: permite ir direto ao conteúdo -->
+    <a class="pular-conteudo" href="#conteudoPrincipal">
+        Pular para o conteúdo principal
+    </a>
+
+
+    <header>
+
+        <div class="container">
+
+            <h1>Conexão Solidária</h1>
+
+            <div class="acoes-cabecalho">
+
+                <button
+                    class="botao-contraste"
+                    id="botaoContraste"
+                    type="button"
+                    aria-pressed="false"
+                    aria-label="Ativar modo de alto contraste"
+                >
+                    ◐ Contraste
+                </button>
+
+                <button
+                    class="menu-hamburguer"
+                    id="menuHamburguer"
+                    type="button"
+                    aria-label="Abrir menu de navegação"
+                    aria-expanded="false"
+                    aria-controls="menuPrincipal"
+                >
+                    ☰
+                </button>
+
+            </div>
+
+
+            <nav
+                class="navegacao"
+                id="menuPrincipal"
+                aria-label="Navegação principal"
+            >
+
+                <ul class="menu">
+
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+
+                    <li class="possui-submenu">
+
+                        <a
+                            href="projetos.html"
+                            aria-current="page"
+                        >
+                            Projetos
+                        </a>
+
+                        <ul class="submenu">
+
+                            <li>
+                                <a href="projetos.html">
+                                    Nossos Projetos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#como-contribuir">
+                                    Como Contribuir
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="cadastro.html">
+                            Seja Voluntário
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main id="conteudoPrincipal">
+
+        <!-- TÍTULO -->
+
+        <section
+            class="titulo-pagina"
+            aria-labelledby="tituloProjetos"
+        >
+
+            <div class="container">
+
+                <h2 id="tituloProjetos">
+                    Nossos Projetos
+                </h2>
+
+                <p>
+                    Conheça algumas das iniciativas
+                    desenvolvidas pela Conexão Solidária.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJETOS GERADOS PELO JAVASCRIPT -->
+
+        <section
+            class="projetos"
+            aria-labelledby="tituloIniciativas"
+        >
+
+            <div class="container">
+
+                <h2 id="tituloIniciativas">
+                    Conheça nossas iniciativas
+                </h2>
+
+                <div
+                    class="cards"
+                    id="listaProjetos"
+                >
+                    <!--
+                        Os cards serão inseridos
+                        dinamicamente pelo templates.js
+                    -->
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMO CONTRIBUIR -->
+
+        <section
+            class="doacoes"
+            id="como-contribuir"
+            aria-labelledby="tituloContribuir"
+        >
+
+            <div class="container">
+
+                <h2 id="tituloContribuir">
+                    Como contribuir
+                </h2>
+
+                <p>
+                    Você pode contribuir participando como
+                    voluntário ou apoiando nossas campanhas
+                    de arrecadação. Toda contribuição ajuda
+                    nossos projetos a alcançarem mais pessoas.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAMADA -->
+
+        <section
+            class="chamada"
+            aria-labelledby="tituloParticipar"
+        >
+
+            <div class="container">
+
+                <h2 id="tituloParticipar">
+                    Quer participar?
+                </h2>
+
+                <p>
+                    Cadastre-se como voluntário e ajude
+                    a transformar a vida de outras pessoas.
+                </p>
+
+                <a
+                    href="cadastro.html"
+                    class="botao"
+                >
+                    Quero ser voluntário
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 Conexão Solidária -
+                Todos os direitos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script
+        type="module"
+        src="../js/main.js"
+    ></script>
+
+</body>
+
+</html>

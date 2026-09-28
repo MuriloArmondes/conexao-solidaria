@@ -10,31 +10,97 @@
 
     <title>Conexão Solidária | Cadastro</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
+<a class="pular-conteudo" href="#conteudoPrincipal">
+    Pular para o conteúdo principal
+</a>
     <header>
         <div class="container">
 
             <h1>Conexão Solidária</h1>
 
-            <nav aria-label="Navegação principal">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="cadastro.html">Seja Voluntário</a></li>
+            <div class="acoes-cabecalho">
+
+    <button
+        class="botao-contraste"
+        id="botaoContraste"
+        type="button"
+        aria-pressed="false"
+        aria-label="Ativar modo de alto contraste"
+    >
+        ◐ Contraste
+    </button>
+
+    <button
+        class="menu-hamburguer"
+        id="menuHamburguer"
+        type="button"
+        aria-label="Abrir menu de navegação"
+        aria-expanded="false"
+        aria-controls="menuPrincipal"
+    >
+        ☰
+    </button>
+
+</div>
+
+            <nav
+                class="navegacao"
+                id="menuPrincipal"
+                aria-label="Navegação principal">
+
+                <ul class="menu">
+
+                    <li>
+                        <a href="index.html">Início</a>
+                    </li>
+
+                    <li class="possui-submenu">
+
+                        <a href="projetos.html">
+                            Projetos
+                        </a>
+
+                        <ul class="submenu">
+
+                            <li>
+                                <a href="projetos.html">
+                                    Nossos Projetos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="projetos.html#como-contribuir">
+                                    Como Contribuir
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li>
+                        <a href="cadastro.html" aria-current="page">
+                            Seja Voluntário
+                        </a>
+                    </li>
+
                 </ul>
+
             </nav>
 
         </div>
     </header>
 
 
-    <main>
+    <main id="conteudoPrincipal">
 
         <section class="titulo-pagina">
+
             <div class="container">
 
                 <h2>Cadastro de Voluntário</h2>
@@ -45,19 +111,35 @@
                 </p>
 
             </div>
+
         </section>
 
 
         <section class="area-formulario">
+
             <div class="container">
 
                 <h2>Formulário de inscrição</h2>
+
+                <!-- ALERTA INFORMATIVO -->
+
+                <div
+                    class="alerta alerta-info"
+                    role="alert">
+
+                    <strong>Atenção:</strong>
+                    preencha todos os campos obrigatórios antes
+                    de enviar seu cadastro.
+
+                </div>
+
 
                 <form id="formCadastro">
 
                     <fieldset>
 
                         <legend>Dados pessoais</legend>
+
 
                         <div class="campo">
 
@@ -117,6 +199,7 @@
 
                         <legend>Contato</legend>
 
+
                         <div class="campo">
 
                             <label for="email">
@@ -160,6 +243,7 @@
                     <fieldset>
 
                         <legend>Endereço</legend>
+
 
                         <div class="campo">
 
@@ -266,6 +350,7 @@
 
                         <legend>Voluntariado</legend>
 
+
                         <div class="campo">
 
                             <label for="area">
@@ -340,19 +425,25 @@
                     </fieldset>
 
 
-                    <button type="submit" class="botao">
+                    <button
+                        type="submit"
+                        class="botao">
+
                         Enviar cadastro
+
                     </button>
 
                 </form>
 
             </div>
+
         </section>
 
     </main>
 
 
     <footer>
+
         <div class="container">
 
             <p>
@@ -361,10 +452,27 @@
             </p>
 
         </div>
+
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <!-- TOAST DE SUCESSO -->
+
+    <div
+        id="toast"
+        class="toast"
+        role="status"
+        aria-live="polite">
+
+        ✓ Cadastro realizado com sucesso!
+
+    </div>
+
+
+    <script
+    type="module"
+    src="../js/main.js"
+    ></script>
 
 </body>
 
