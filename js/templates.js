@@ -2,10 +2,10 @@
    DADOS DOS PROJETOS
 ======================================== */
 
-import imagemAgasalho from "../imagens/agasalho.jpg";
-import imagemAlimento from "../imagens/alimento.jpg";
-import imagemEducacao from "../imagens/educacao.jpg";
-import imagemInclusao from "../imagens/inclusao.jpg";
+import imagemAgasalho from "../imagens/agasalho.webp";
+import imagemAlimento from "../imagens/alimento.webp";
+import imagemEducacao from "../imagens/educacao.webp";
+import imagemInclusao from "../imagens/inclusao.webp";
 
 const projetos = [
     {

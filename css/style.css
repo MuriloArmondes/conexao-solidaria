@@ -1523,3 +1523,21 @@ body.alto-contraste .alerta-info {
     }
 
 }
+
+/* ========================================
+   CORREÇÃO DA IMAGEM HERO
+======================================== */
+
+.hero-conteudo picture {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+}
+
+.hero-conteudo picture .imagem-hero {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+}
