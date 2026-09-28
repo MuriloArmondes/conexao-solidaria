@@ -151,13 +151,22 @@
                     </div>
 
 
-                    <img
-                        src="../imagens/educacao.jpg"
-                        alt="Voluntários participando de uma ação social"
-                        class="imagem-hero"
-                        width="600"
-                        height="400"
-                    >
+                    <picture>
+                        <source
+                            srcset="../imagens/educacao.webp"
+                            type="image/webp"
+                        >
+
+                        <img
+                            src="../imagens/educacao.jpg"
+                             alt="Voluntários participando de uma ação social"
+                            class="imagem-hero"
+                             width="600"
+                            height="400"
+                            loading="eager"
+                            decoding="async"
+                        >
+                    </picture>
 
                 </div>
 
